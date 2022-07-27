@@ -6,7 +6,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Produces;
 import java.net.InetAddress;
 
-@Path("/")
+@Path("/test")
 public class ServerHostEndPoint {
 
   @GET
@@ -19,7 +19,7 @@ public class ServerHostEndPoint {
     catch (Exception e) {
        e.printStackTrace();
     }
-    String msg = "I am running on server "+host+" Version 1.0 \n";
+    String msg = "I am running on server "+host+" Version 2.0 \n";
     return Response.ok(msg).build();
   }
 }
